@@ -3,8 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function updateTime() {
-  // Target date: February 17th, 2024 in Brazilian timezone
-  const targetDate = moment.tz("2024-02-19T22:40:00", "America/Sao_Paulo");
+  // Target date: February 17th, 2024
+  const targetDate = moment.tz("2024-02-19 22:40", "America/Sao_Paulo");
+  console.log(targetDate);
 
   // Current date
   const currentDate = moment();
